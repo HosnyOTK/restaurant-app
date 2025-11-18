@@ -1,0 +1,187 @@
+.background-logo-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.background-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  max-width: 90vw;
+  padding: 80px 60px;
+  background: linear-gradient(135deg, #3a4f5f 0%, #4a6178 100%);
+  border-radius: 20px;
+  text-align: center;
+  opacity: 0.25;
+  will-change: transform;
+  box-shadow: 0 20px 60px rgba(58, 79, 95, 0.3);
+}
+
+.logo-icon-bg {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 40px;
+  position: relative;
+}
+
+.logo-icon-bg::before,
+.logo-icon-bg::after {
+  content: '';
+  position: absolute;
+  background: white;
+  border-radius: 3px;
+}
+
+/* Barre verticale du L */
+.logo-icon-bg::before {
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 100%;
+}
+
+/* Barre horizontale du L */
+.logo-icon-bg::after {
+  left: 0;
+  bottom: 0;
+  width: 75px;
+  height: 18px;
+}
+
+/* Lignes supplémentaires */
+.logo-icon-bg .line1-bg,
+.logo-icon-bg .line2-bg {
+  position: absolute;
+  background: white;
+  border-radius: 3px;
+}
+
+.logo-icon-bg .line1-bg {
+  left: 30px;
+  top: 0;
+  width: 18px;
+  height: 85%;
+}
+
+.logo-icon-bg .line2-bg {
+  left: 60px;
+  top: 0;
+  width: 18px;
+  height: 60%;
+}
+
+.logo-text-bg {
+  color: white;
+}
+
+.logo-text-bg h1 {
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  color: white;
+  text-transform: none;
+}
+
+.logo-text-bg p {
+  font-size: 1em;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: white;
+  opacity: 0.95;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .background-logo {
+    width: 500px;
+    padding: 60px 50px;
+    opacity: 0.22;
+  }
+
+  .logo-icon-bg {
+    width: 100px;
+    height: 100px;
+  }
+
+  .logo-text-bg h1 {
+    font-size: 2.5em;
+  }
+
+  .logo-text-bg p {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 768px) {
+  .background-logo {
+    width: 400px;
+    padding: 50px 40px;
+    opacity: 0.06;
+  }
+
+  .logo-icon-bg {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 30px;
+  }
+
+  .logo-icon-bg::before {
+    width: 14px;
+  }
+
+  .logo-icon-bg::after {
+    width: 60px;
+    height: 14px;
+  }
+
+  .logo-icon-bg .line1-bg {
+    left: 24px;
+    width: 14px;
+  }
+
+  .logo-icon-bg .line2-bg {
+    left: 48px;
+    width: 14px;
+  }
+
+  .logo-text-bg h1 {
+    font-size: 2em;
+  }
+
+  .logo-text-bg p {
+    font-size: 0.75em;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .background-logo {
+    width: 320px;
+    padding: 40px 30px;
+    opacity: 0.18;
+  }
+
+  .logo-icon-bg {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+  }
+
+  .logo-text-bg h1 {
+    font-size: 1.5em;
+  }
+
+  .logo-text-bg p {
+    font-size: 0.65em;
+  }
+}
+

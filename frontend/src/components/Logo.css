@@ -1,0 +1,220 @@
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s ease;
+}
+
+.logo-container:hover {
+  opacity: 0.9;
+}
+
+.logo-icon {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.logo-icon::before,
+.logo-icon::after {
+  content: '';
+  position: absolute;
+  background: var(--color-primary);
+  border-radius: 2px;
+}
+
+/* Barre verticale du L */
+.logo-icon::before {
+  left: 0;
+  top: 0;
+  width: 8px;
+  height: 100%;
+}
+
+/* Barre horizontale du L */
+.logo-icon::after {
+  left: 0;
+  bottom: 0;
+  width: 35px;
+  height: 8px;
+}
+
+/* Lignes supplémentaires pour l'effet stylisé */
+.logo-icon .line1,
+.logo-icon .line2 {
+  position: absolute;
+  background: var(--color-primary);
+  border-radius: 2px;
+}
+
+.logo-icon .line1 {
+  left: 15px;
+  top: 0;
+  width: 8px;
+  height: 60%;
+}
+
+.logo-icon .line2 {
+  left: 28px;
+  top: 0;
+  width: 8px;
+  height: 40%;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo-text h1 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  margin: 0;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.logo-text p {
+  font-size: 0.65rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
+  color: var(--color-secondary);
+  font-weight: 300;
+  opacity: 0.8;
+  line-height: 1.2;
+}
+
+/* Variante claire */
+.logo-container.light .logo-icon::before,
+.logo-container.light .logo-icon::after,
+.logo-container.light .logo-icon .line1,
+.logo-container.light .logo-icon .line2 {
+  background: var(--color-primary);
+}
+
+.logo-container.light .logo-text h1 {
+  color: var(--color-primary);
+}
+
+.logo-container.light .logo-text p {
+  color: var(--color-secondary);
+}
+
+/* Tailles */
+.logo-container.small .logo-icon {
+  width: 35px;
+  height: 35px;
+}
+
+.logo-container.small .logo-icon::before {
+  width: 6px;
+}
+
+.logo-container.small .logo-icon::after {
+  width: 25px;
+  height: 6px;
+}
+
+.logo-container.small .logo-icon .line1 {
+  left: 10px;
+  width: 6px;
+}
+
+.logo-container.small .logo-icon .line2 {
+  left: 20px;
+  width: 6px;
+}
+
+.logo-container.small .logo-text h1 {
+  font-size: 0.95rem;
+}
+
+.logo-container.small .logo-text p {
+  font-size: 0.55rem;
+}
+
+.logo-container.large .logo-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.logo-container.large .logo-icon::before {
+  width: 10px;
+}
+
+.logo-container.large .logo-icon::after {
+  width: 50px;
+  height: 10px;
+}
+
+.logo-container.large .logo-icon .line1 {
+  left: 20px;
+  width: 10px;
+}
+
+.logo-container.large .logo-icon .line2 {
+  left: 38px;
+  width: 10px;
+}
+
+.logo-container.large .logo-text h1 {
+  font-size: 1.6rem;
+}
+
+.logo-container.large .logo-text p {
+  font-size: 0.75rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .logo-container {
+    gap: 0.75rem;
+  }
+
+  .logo-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo-icon::before {
+    width: 7px;
+  }
+
+  .logo-icon::after {
+    width: 28px;
+    height: 7px;
+  }
+
+  .logo-icon .line1 {
+    left: 12px;
+    width: 7px;
+  }
+
+  .logo-icon .line2 {
+    left: 24px;
+    width: 7px;
+  }
+
+  .logo-text h1 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+
+  .logo-text p {
+    font-size: 0.6rem;
+    letter-spacing: 0.5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-text p {
+    display: none; /* Masquer le sous-titre sur très petits écrans */
+  }
+}
+
+

@@ -1,0 +1,63 @@
+===========================================
+  INSTRUCTIONS POUR OUVRIR LE SCHEMA
+===========================================
+
+METHODE 1 - Via le site web (RECOMMANDE)
+----------------------------------------
+1. Allez sur: https://app.diagrams.net/
+2. Cliquez sur "Open Existing Diagram"
+3. Naviguez vers: C:\Users\DELL\Restaurant final\
+4. Selectionnez: SCHEMA_BASE_DONNEES.drawio
+5. Cliquez sur "Ouvrir"
+
+METHODE 2 - Double-clic sur le fichier
+--------------------------------------
+1. Faites un clic droit sur SCHEMA_BASE_DONNEES.drawio
+2. Choisissez "Ouvrir avec"
+3. Selectionnez votre navigateur (Chrome, Edge, Firefox)
+4. Le fichier s'ouvrira dans Draw.io
+
+METHODE 3 - Via Visual Studio Code
+-----------------------------------
+1. Installez l'extension "Draw.io Integration" dans VS Code
+2. Ouvrez le fichier SCHEMA_BASE_DONNEES.drawio dans VS Code
+3. Le diagramme s'affichera automatiquement
+
+METHODE 4 - Renommer en XML
+----------------------------
+1. Renommez SCHEMA_BASE_DONNEES.drawio en SCHEMA_BASE_DONNEES.xml
+2. Ouvrez-le dans Draw.io
+
+===========================================
+  CONTENU DU SCHEMA
+===========================================
+
+Le diagramme contient 8 tables:
+
+1. restaurants (bleu) - 9 champs
+2. categories (bleu) - 7 champs  
+3. plats (bleu) - 9 champs
+4. clients (vert) - 9 champs
+5. commandes (jaune) - 11 champs
+6. commande_details (jaune) - 6 champs
+7. factures (rouge) - 11 champs
+8. avis (violet) - 9 champs
+
+Toutes les relations entre les tables sont incluses.
+
+===========================================
+  EXPORT
+===========================================
+
+Une fois ouvert dans Draw.io:
+- Fichier > Exporter en tant que > PNG (pour image)
+- Fichier > Exporter en tant que > PDF (pour document)
+- Fichier > Exporter en tant que > SVG (pour vectoriel)
+
+===========================================
+
+
+
+
+
+
